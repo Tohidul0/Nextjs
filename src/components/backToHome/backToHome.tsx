@@ -1,6 +1,11 @@
-import React from "react";
-import { createStyledLink } from "@/utils/createStyledLink";
+"use client";
 
-export const BackToHome: React.FC = () => {
-  return createStyledLink("/", "← Home");
+import Link from 'next/link';
+
+export const BackToHome = () => {
+  return (
+    <Link href="/" className="text-blue-500 hover:text-blue-700 mb-4 block">
+      ← Back to Home
+    </Link>
+  );
 };

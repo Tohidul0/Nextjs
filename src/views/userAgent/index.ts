@@ -1,1 +1,2 @@
-export * from "./userAgent";
+export * from './userAgent';
+export * from './UserAgentClient';
